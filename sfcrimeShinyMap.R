@@ -9,10 +9,9 @@ require(ggmap)
 train <- read.csv('train.csv', stringsAsFactors = FALSE)
 test <- read.csv('test.csv', stringsAsFactors = FALSE)
 
-#convert dates to Data format
+#convert dates to Date format
 train$Dates <- as.Date(train$Dates)
 test$Dates <- as.Date(test$Dates)
-
 
 loc <- 'San Francisco, CA'
 location <- geocode(loc)
